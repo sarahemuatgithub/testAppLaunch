@@ -36,7 +36,7 @@ angular.module('starter', ['ionic','ngCordova'])
     if (ionic.Platform.isAndroid()) {
         // plugin com.lampa.startapp
         appId = 'com.blackboard.android.bbstudent';
-        appStarter = startApp.set({"package": appId});
+        appStarter = startApp.set({"application": appId});
         appStarter.start(function(msg) {
             console.log('starting BB app: ' + msg);
         }, function(err) {
