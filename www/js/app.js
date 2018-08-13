@@ -23,11 +23,12 @@ angular.module('starter', ['ionic','ngCordova'])
   });
 })
 
-.controller('CheckController', function($scope, $cordovaInAppBrowser) {
+.controller('CheckController', function($scope) {
 
   var appId = "";
 
     var appId, appStarter = "";
+    alert(ionic.$ionicPlatform);
     if (ionic.Platform.isAndroid()) {
         // plugin com.lampa.startapp
         appId = 'com.blackboard.android';
