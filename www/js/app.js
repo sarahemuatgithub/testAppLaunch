@@ -28,7 +28,8 @@ angular.module('starter', ['ionic','ngCordova'])
   var appId = "";
 
     var appId, appStarter = "";
-    alert(ionic.$ionicPlatform);
+    alert(ionic.$ionicPlatform.isIOS());
+    alert(ionic.$ionicPlatform.isAndroid());
     if (ionic.Platform.isAndroid()) {
         // plugin com.lampa.startapp
         appId = 'com.blackboard.android';
