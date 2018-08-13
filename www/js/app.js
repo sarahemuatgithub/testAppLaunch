@@ -1,5 +1,8 @@
 // Ionic Starter App
-
+document.addEventListener('deviceready', function() { 
+  angular.bootstrap(document, ['starter']);
+}, false);
+ 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
@@ -23,13 +26,13 @@ angular.module('starter', ['ionic','ngCordova'])
   });
 })
 
-.controller('CheckController', function($scope) {
+.controller('CheckController', function($scope,$ionicPlatform) {
 
   var appId = "";
 
     var appId, appStarter = "";
-    alert(ionic.$ionicPlatform.isIOS());
-    alert(ionic.$ionicPlatform.isAndroid());
+    alert(ionic.Platform);
+    $ionicPlatform.ready(function() {
     if (ionic.Platform.isAndroid()) {
         // plugin com.lampa.startapp
         appId = 'com.blackboard.android';
@@ -52,6 +55,7 @@ angular.module('starter', ['ionic','ngCordova'])
               });
         }
     }
+  })
      
   /*document.addEventListener("deviceready", onDeviceReady, false);
    
