@@ -45,13 +45,15 @@ angular.module('starter', ['ionic','ngCordova'])
         });
     } else {
         if (ionic.Platform.isIOS() || ionic.Platform.isIPad()) {
-            appId = 'bblearn://';
+            //appId = 'bblearn://';
+            appId = 'blackboard://';
             appStarter = startApp.set(appId);
             appStarter.start(function(msg) {
                 console.log('starting BB app: ' + msg);                
             }, function(err) {
                 console.log('BB app not installed', err);
-                window.open('itms-apps://itunes.apple.com/nl/app/blackboard-mobile-learn/id376413870?mt=8', '_system');
+              // window.open('itms-apps://itunes.apple.com/nl/app/blackboard-mobile-learn/id376413870?mt=8', '_system');
+                window.open('itms-apps://itunes.apple.com/us/app/blackboard/id950424861?mt=8', '_system');
               });
         }
     }
