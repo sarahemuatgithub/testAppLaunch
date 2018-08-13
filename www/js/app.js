@@ -75,10 +75,10 @@ angular.module('starter', ['ionic','ngCordova'])
           storeLink=   'market://details?id=com.twitter.android';
       }
        
-      appAvailability.check(
+     appAvailability.check(
           scheme, // URI Scheme
           function() {  // Success callback
-              window.open(storeLink, '_system', 'location=no');
+              window.open(scheme, '_system', 'location=no');
               alert('twitter is available');
           },
           function() {  // Error callback
@@ -86,5 +86,8 @@ angular.module('starter', ['ionic','ngCordova'])
             alert('twitter is not available');
           }
       );      
+
+     
+});
   }       
 });
