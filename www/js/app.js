@@ -57,7 +57,8 @@ angular.module('starter', ['ionic','ngCordova'])
               });
         }
     }
-  })*/
+  })
+  });*/
      
   document.addEventListener("deviceready", onDeviceReady, false);
    
@@ -78,16 +79,18 @@ angular.module('starter', ['ionic','ngCordova'])
      appAvailability.check(
           scheme, // URI Scheme
           function() {  // Success callback
+            alert('twitter is available');
               window.open(scheme, '_system', 'location=no');
-              alert('twitter is available');
+             
           },
           function() {  // Error callback
-            window.open(storeLink, '_system');
             alert('twitter is not available');
+            window.open(storeLink, '_system');
+          
           }
       );      
 
      
-});
+
   }       
 });
