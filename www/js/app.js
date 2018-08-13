@@ -35,13 +35,13 @@ angular.module('starter', ['ionic','ngCordova'])
     $ionicPlatform.ready(function() {
     if (ionic.Platform.isAndroid()) {
         // plugin com.lampa.startapp
-        appId = 'com.blackboard.android';
+        appId = 'com.blackboard.android.bbstudent';
         appStarter = startApp.set({"package": appId});
         appStarter.start(function(msg) {
             console.log('starting BB app: ' + msg);
         }, function(err) {
             console.log('BB app not installed', err);
-            window.open('market://details?id=com.blackboard.android', '_system');
+            window.open('market://details?id=com.blackboard.android.bbstudent', '_system');
         });
     } else {
         if (ionic.Platform.isIOS() || ionic.Platform.isIPad()) {
