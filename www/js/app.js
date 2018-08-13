@@ -45,7 +45,7 @@ angular.module('starter', ['ionic','ngCordova'])
         });
     } else {
         if (ionic.Platform.isIOS() || ionic.Platform.isIPad()) {
-            appId = 'bbstudent://';
+            appId = 'twitter://';
            // appId = '950424861://';
             appStarter = startApp.set(appId);
             appStarter.start(function(msg) {
