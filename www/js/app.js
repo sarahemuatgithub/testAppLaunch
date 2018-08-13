@@ -28,7 +28,7 @@ angular.module('starter', ['ionic','ngCordova'])
 
 .controller('CheckController', function($scope,$ionicPlatform) {
 
-  var appId = "";
+ /* var appId = "";
 
     var appId, appStarter = "";
     alert(ionic.Platform);
@@ -57,9 +57,9 @@ angular.module('starter', ['ionic','ngCordova'])
               });
         }
     }
-  })
+  })*/
      
-  /*document.addEventListener("deviceready", onDeviceReady, false);
+  document.addEventListener("deviceready", onDeviceReady, false);
    
   function onDeviceReady() {
        
@@ -68,21 +68,23 @@ angular.module('starter', ['ionic','ngCordova'])
       // Don't forget to add the org.apache.cordova.device plugin!
       if(device.platform === 'iOS') {
           scheme = 'twitter://';
+          storeLink=   'itms-apps://itunes.apple.com/us/app/blackboard/id950424861?mt=8';
       }
       else if(device.platform === 'Android') {
           scheme = 'com.twitter.android';
+          storeLink=   'market://details?id=com.twitter.android';
       }
        
       appAvailability.check(
           scheme, // URI Scheme
           function() {  // Success callback
-              window.open('twitter://user?screen_name=gajotres', '_system', 'location=no');
-              console.log('Twitter is available');
+              window.open(storeLink, '_system', 'location=no');
+              alert('twitter is available');
           },
           function() {  // Error callback
-              window.open('https://twitter.com/gajotres', '_system', 'location=no');
-              console.log('Twitter is not available');
+            window.open(storeLink, '_system');
+            alert('twitter is not available');
           }
       );      
-  }       */
+  }       
 });
