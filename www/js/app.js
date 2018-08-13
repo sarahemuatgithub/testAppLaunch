@@ -80,7 +80,7 @@ angular.module('starter', ['ionic','ngCordova'])
           scheme, // URI Scheme
           function() {  // Success callback
             alert('twitter is available');
-              window.open(scheme, '_system', 'location=no');
+              window.open(scheme, '_system');
              
           },
           function() {  // Error callback
