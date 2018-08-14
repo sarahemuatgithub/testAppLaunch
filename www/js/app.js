@@ -28,7 +28,7 @@ angular.module('starter', ['ionic','ngCordova'])
 
 .controller('CheckController', function($scope,$ionicPlatform) {
 
- /* var appId = "";
+  var appId = "";
 
     var appId, appStarter = "";
     alert(ionic.Platform);
@@ -58,9 +58,8 @@ angular.module('starter', ['ionic','ngCordova'])
         }
     }
   })
-  });*/
-     
-  document.addEventListener("deviceready", onDeviceReady, false);
+  
+  /*document.addEventListener("deviceready", onDeviceReady, false);
    
   function onDeviceReady() {
        
@@ -89,8 +88,5 @@ angular.module('starter', ['ionic','ngCordova'])
           
           }
       );      
-
-     
-
-  }       
+  } */      
 });
