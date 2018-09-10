@@ -48,7 +48,8 @@ angular.module('starter', ['ionic','ngCordova'])
            //appId = 'twitter://';
             appId = 'com.ionicframework.newemumobile617244://';
           //  appId = 'https://twitter.com/login';
-            appStarter = startApp.set({"application": appId});
+          appStarter= startApp.set("twitter://");
+           // appStarter = startApp.set(appId);
             appStarter.start(function(msg) {
                 console.log('starting EMU app: ' + msg);                
             }, function(err) {
