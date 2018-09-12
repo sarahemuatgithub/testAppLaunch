@@ -40,21 +40,9 @@
         <h1 class="title">Index</h1>
       </ion-header-bar>
       
-      <ion-content >
-          <a class="item item-thumbnail-left item-text-wrap"
-          onclick="window.open('twitter://', '_system')">
-           <img ng-src="img/appointment.png">
-           <h2>twitter</h2>
-           <p>twitter://</p>
-       </a>
 
-          <a class="item item-thumbnail-left item-text-wrap"
-          onclick="window.open('com.twitter.android', '_system')">
-           <img ng-src="img/appointment.png">
-           <h2>twitter</h2>
-           <p>twitter://</p>
-       </a>
-      </ion-content>
+      <ion-content ng-controller="CheckController"></ion-content>
+
     </ion-pane>
   </body>
 </html>
