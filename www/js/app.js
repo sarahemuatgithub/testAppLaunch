@@ -45,8 +45,8 @@ angular.module('starter', ['ionic','ngCordova'])
         });
     } else {
         if (ionic.Platform.isIOS() || ionic.Platform.isIPad()) {
-           appId = 'twitter://';
-           //appId = 'emumobileapp://';
+           //appId = 'twitter://';
+           appId = 'emumobileapp://';
             //appId = 'com.ionicframework.newemumobile617244://';
             appStarter = startApp.set(appId);
             appStarter.start(function(msg) {
