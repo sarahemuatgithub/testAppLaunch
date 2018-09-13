@@ -38,9 +38,9 @@ angular.module('starter', ['ionic','ngCordova'])
         appId = 'com.ionicframework.newemumobile617244';
         appStarter = startApp.set({"application": appId});
         appStarter.start(function(msg) {
-            console.log('starting EMU app: ' + msg);
+            //console.log('starting EMU app: ' + msg);
         }, function(err) {
-            console.log('EMU app not installed', err);
+            //console.log('EMU app not installed', err);
             window.open('market://details?id=com.ionicframework.newemumobile617244', '_system');
         });
     } else {
@@ -50,9 +50,9 @@ angular.module('starter', ['ionic','ngCordova'])
             //appId = 'com.ionicframework.newemumobile617244://';
             appStarter = startApp.set(appId);
             appStarter.start(function(msg) {
-                console.log('starting EMU app: ' + msg);                
+                //console.log('starting EMU app: ' + msg);                
             }, function(err) {
-                console.log('EMU app not installed', err);
+                //console.log('EMU app not installed', err);
               // window.open('itms-apps://itunes.apple.com/nl/app/blackboard-mobile-learn/id376413870?mt=8', '_system');
                 window.open('itms-apps://itunes.apple.com/us/app/emu-mobile/id1165500219?mt=8', '_system');
               });
