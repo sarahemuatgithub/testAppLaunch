@@ -109,6 +109,7 @@
                 <string>emumobileapp</string>
                   <string>twitter</string>
                     <string>blackboard</string>
+                    <string>emu-engage</string>
             </array>
 </config-file>
 </widget>
