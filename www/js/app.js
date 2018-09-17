@@ -35,25 +35,25 @@ angular.module('starter', ['ionic','ngCordova'])
     $ionicPlatform.ready(function() {
     if (ionic.Platform.isAndroid()) {
         // plugin com.lampa.startapp
-        appId = 'com.ionicframework.newemumobile617244';
+        appId = 'com.oohlala.emu';
         appStarter = startApp.set({"application": appId});
         appStarter.start(function(msg) {
-            console.log('starting EMU app: ' + msg);
+            console.log('starting EMU engage app: ' + msg);
         }, function(err) {
             console.log('EMU app not installed', err);
-            window.open('market://details?id=com.ionicframework.newemumobile617244', '_system');
+            window.open('market://details?id=com.oohlala.emu', '_system');
         });
     } else {
         if (ionic.Platform.isIOS() || ionic.Platform.isIPad()) {
-           appId = 'twitter://';
+           appId = 'emu-engage://';
             //appId = 'com.ionicframework.newemumobile617244://';
             appStarter = startApp.set(appId);
             appStarter.start(function(msg) {
-                console.log('starting EMU app: ' + msg);                
+                console.log('starting EMU engage app: ' + msg);                
             }, function(err) {
                 console.log('EMU app not installed', err);
               // window.open('itms-apps://itunes.apple.com/nl/app/blackboard-mobile-learn/id376413870?mt=8', '_system');
-                window.open('itms-apps://itunes.apple.com/us/app/emu-mobile/id1165500219?mt=8', '_system');
+                window.open('itms-apps://itunes.apple.com/us/app/emu-engage/id1266848634?mt=8', '_system');
               });
         }
     }
